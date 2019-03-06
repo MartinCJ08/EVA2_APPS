@@ -32,6 +32,16 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void onClickLlamda(View v){
+
+        String sTel = "tel:"+edtTxtNum.getText().toString();
+        inMarcar = new Intent(Intent.ACTION_CALL, Uri.parse(sTel));
+        //Iniciar la actividad depden si solicitan o n resultados
+        //Sin resultados
+        startActivity(inMarcar);
+        //Con resultados startActivityForResult
+
+    }
     public void onClickSearch(View v){
         //Recuperar info de usuariio
         String sBus = edtTxtSearch.getText().toString();
