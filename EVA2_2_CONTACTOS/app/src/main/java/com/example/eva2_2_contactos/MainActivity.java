@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickVerCont(View v) {
-        String sUri = ContactsContract.Contacts.CONTENT_URI + "/1";
+        String sUri = ContactsContract.Contacts.CONTENT_URI + "/3";
         inCont = new Intent(Intent.ACTION_EDIT, Uri.parse(sUri));
         startActivity(inCont);
     }

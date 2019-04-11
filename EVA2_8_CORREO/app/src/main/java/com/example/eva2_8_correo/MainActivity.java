@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
         edtTxtCorreo = findViewById(R.id.edtTxtCorreo);
         edtTxtAsunto = findViewById(R.id.edtTxtAsunto);
         edtTxtMensaje = findViewById(R.id.edtTxtMensaje);
+
+        inCorreo = new Intent(Intent.ACTION_SEND);
     }
 
     public void onClick(View v){
